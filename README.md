@@ -57,7 +57,7 @@ Puedes configurar los siguientes parámetros de tu empresa desde la página de c
 ## Notas
 
 - El plugin comprobará si **WooCommerce** y **WooCommerce PDF Invoices & Packing Slips** están activos. Si alguno de estos no está activo, mostrará una notificación de error en el panel de administración.
-- Si necesitas soporte, por favor contacta con el desarrollador en [xarop.com](https://xarop.com).
+- Si necesitas soporte, por favor contacta con el desarrollador en [xarop.com](https://xarop.com/suport/).
 
 ## Licencia
 
