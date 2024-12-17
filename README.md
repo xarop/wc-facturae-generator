@@ -69,4 +69,4 @@ Si deseas contribuir al desarrollo de este plugin, siéntete libre de realizar u
 
 ## Autor
 
-Desarrollado por **xarop.com**.
+Desarrollado por [**xarop.com**](https://github.com/xarop).
