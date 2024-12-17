@@ -48,23 +48,22 @@ function wc_facturae_redirect_to_plugins_page()
     exit;
 }
 
-// Evitar que el menú se agregue varias veces
-if (!function_exists('wc_facturae_add_menu_page')) {
-    // Agregar la opción al menú de WooCommerce
-    add_action('admin_menu', 'wc_facturae_add_menu_page');
-    function wc_facturae_add_menu_page()
-    {
-        // Añadir la página principal en el menú de WooCommerce
-        add_submenu_page(
-            'woocommerce',                              // Menú principal (WooCommerce)
-            'FacturaE XML Generator',                   // Título de la página
-            'FacturaE XML Generator',                   // Título del menú
-            'manage_woocommerce',                       // Capacidad necesaria
-            'wc-facturae-generator',                    // Slug
-            'wc_facturae_menu_page_callback'            // Función para mostrar la página
-        );
-    }
+
+// Agregar la opción al menú de WooCommerce
+add_action('admin_menu', 'wc_facturae_add_menu_page');
+function wc_facturae_add_menu_page()
+{
+    // Añadir la página principal en el menú de WooCommerce
+    add_submenu_page(
+        'woocommerce',                              // Menú principal (WooCommerce)
+        'FacturaE XML Generator',                   // Título de la página
+        'FacturaE XML Generator',                   // Título del menú
+        'manage_woocommerce',                       // Capacidad necesaria
+        'wc-facturae-generator',                    // Slug
+        'wc_facturae_menu_page_callback'            // Función para mostrar la página
+    );
 }
+
 
 // Callback de la página de configuración del plugin
 function wc_facturae_menu_page_callback()
